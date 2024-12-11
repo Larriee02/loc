@@ -1,0 +1,139 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Location Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+     <body>
+    <h1 id="title"> Location Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+        <label  id="name-label" for="name">Name
+          <input id="name" type="text" name="name" placeholder="Enter your name" required></input>
+        </label>
+        <label id="email-label" for="email">Email
+         <input id="email" type="email" name="email" placeholder="Enter your email" required />       
+        </label>
+        <label id="number-label" for="number">Age
+           <input id="number"  type="number" name="age" placeholder="Enter your age" min="10" max="100" required />   
+          </label>
+          
+      <label for=dropdown>How did you hear about me?
+           <select id="dropdown" name="referral">
+            <option value="social-media">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Recommendation</option>
+        </select>
+          </label> 
+<p>How often do you visit home ?</p> 
+      <label>
+            <input type="radio" name="frequency" value="daily" required> Daily
+        </label>
+        <label>
+            <input type="radio" name="frequency" value="weekly"> Weekly
+        </label>
+        <label>
+            <input type="radio" name="frequency" value="monthly"> Monthly
+        </label>
+        <p>Would you give me your home address ?</p>
+        <label>
+            <input type="checkbox" name="home" value="definitely"> Definitely
+        </label>
+        <label>
+            <input type="checkbox" name="home" value="no"> No
+        </label>
+        <label>
+            <input type="checkbox" name="home" value="maybe"> Maybe
+        </label>
+        <label for="comments">Kindly input your home address:</label>
+        <textarea 
+            id="comments" 
+            name="comments" 
+            placeholder="Share your address here..."></textarea>
+             <button type="submit" id="submit">Submit</button>
+
+
+    </form>
+    </body>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fecfef;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title {
+    font-size: 2rem;
+    color: #0a0a23;
+}
+
+#description {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+form {
+    background: #fecfef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fecfef;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+** end of undefined **
+
